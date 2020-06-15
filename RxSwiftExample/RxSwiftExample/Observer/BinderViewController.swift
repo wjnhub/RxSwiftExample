@@ -39,7 +39,7 @@ class BinderViewController: UIViewController {
         }
         userNameValid.bind(to: observer).disposed(by: disposeBag)
         
-        // 该示例是一个UI观察者，所以他爱在响应时间时，只会处理next事件，并且更新UI的操作需要在主线程执行，用Binder更适合
+        // 该示例是一个UI观察者，所以他在响应事件时，只会处理next事件，并且更新UI的操作需要在主线程执行，用Binder更适合
         let oberver1: Binder<Bool> = Binder(userNameValid) { (view, isHidden) in
             self.userNameValidLabel.isHidden = isHidden
         }
