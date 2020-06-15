@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         makeUI()
         
         nextButton.rx.tap.subscribe(onNext: { [weak self](tap) in
-            let driverVC = ObserverViewController()
+            let driverVC = DisposableViewController()
             self?.navigationController?.pushViewController(driverVC, animated: true)
         }).disposed(by: disposeBag)
     }

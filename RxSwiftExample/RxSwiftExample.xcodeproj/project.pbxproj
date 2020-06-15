@@ -20,6 +20,13 @@
 		03DE35C1249710DA00B745E4 /* MaybeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE35BB249710DA00B745E4 /* MaybeViewController.swift */; };
 		03DE35C4249716BE00B745E4 /* ObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE35C3249716BE00B745E4 /* ObserverViewController.swift */; };
 		03DE35C624971DBF00B745E4 /* BinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE35C524971DBF00B745E4 /* BinderViewController.swift */; };
+		03DE35C92497224000B745E4 /* AsyncSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE35C82497224000B745E4 /* AsyncSubjectViewController.swift */; };
+		03DE35CB2497258E00B745E4 /* PublishSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE35CA2497258E00B745E4 /* PublishSubjectViewController.swift */; };
+		03DE35CD2497287400B745E4 /* ReplaySubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE35CC2497287400B745E4 /* ReplaySubjectViewController.swift */; };
+		03DE35CF24973F0B00B745E4 /* BehaviorSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE35CE24973F0B00B745E4 /* BehaviorSubjectViewController.swift */; };
+		03DE35D22497410B00B745E4 /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE35D12497410B00B745E4 /* OperatorViewController.swift */; };
+		03DE35D5249741F000B745E4 /* DisposableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE35D4249741F000B745E4 /* DisposableViewController.swift */; };
+		03DE35D82497460600B745E4 /* SchedulersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE35D72497460600B745E4 /* SchedulersViewController.swift */; };
 		6DEBE3FFB85283A3EC6D142D /* Pods_RxSwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7B7911EF49924E9B88CF77 /* Pods_RxSwiftExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +46,13 @@
 		03DE35BB249710DA00B745E4 /* MaybeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaybeViewController.swift; sourceTree = "<group>"; };
 		03DE35C3249716BE00B745E4 /* ObserverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverViewController.swift; sourceTree = "<group>"; };
 		03DE35C524971DBF00B745E4 /* BinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderViewController.swift; sourceTree = "<group>"; };
+		03DE35C82497224000B745E4 /* AsyncSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSubjectViewController.swift; sourceTree = "<group>"; };
+		03DE35CA2497258E00B745E4 /* PublishSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishSubjectViewController.swift; sourceTree = "<group>"; };
+		03DE35CC2497287400B745E4 /* ReplaySubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaySubjectViewController.swift; sourceTree = "<group>"; };
+		03DE35CE24973F0B00B745E4 /* BehaviorSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorSubjectViewController.swift; sourceTree = "<group>"; };
+		03DE35D12497410B00B745E4 /* OperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
+		03DE35D4249741F000B745E4 /* DisposableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposableViewController.swift; sourceTree = "<group>"; };
+		03DE35D72497460600B745E4 /* SchedulersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulersViewController.swift; sourceTree = "<group>"; };
 		13851BB2B82F719859474E62 /* Pods-RxSwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExample.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample.release.xcconfig"; sourceTree = "<group>"; };
 		8A6C7C023FB093A7D1651E84 /* Pods-RxSwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExample.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
 		AA7B7911EF49924E9B88CF77 /* Pods_RxSwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +100,10 @@
 		03DE35A0249710A500B745E4 /* RxSwiftExample */ = {
 			isa = PBXGroup;
 			children = (
+				03DE35D6249745EC00B745E4 /* Schedulers */,
+				03DE35D3249741DA00B745E4 /* Disposeable */,
+				03DE35D0249740E900B745E4 /* Operator */,
+				03DE35C7249721FE00B745E4 /* Observable&Observer */,
 				03DE35C2249712F300B745E4 /* Observer */,
 				03DE35B5249710BC00B745E4 /* Observable */,
 				03DE35A1249710A500B745E4 /* AppDelegate.swift */,
@@ -118,6 +136,41 @@
 				03DE35C524971DBF00B745E4 /* BinderViewController.swift */,
 			);
 			path = Observer;
+			sourceTree = "<group>";
+		};
+		03DE35C7249721FE00B745E4 /* Observable&Observer */ = {
+			isa = PBXGroup;
+			children = (
+				03DE35C82497224000B745E4 /* AsyncSubjectViewController.swift */,
+				03DE35CA2497258E00B745E4 /* PublishSubjectViewController.swift */,
+				03DE35CC2497287400B745E4 /* ReplaySubjectViewController.swift */,
+				03DE35CE24973F0B00B745E4 /* BehaviorSubjectViewController.swift */,
+			);
+			path = "Observable&Observer";
+			sourceTree = "<group>";
+		};
+		03DE35D0249740E900B745E4 /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				03DE35D12497410B00B745E4 /* OperatorViewController.swift */,
+			);
+			path = Operator;
+			sourceTree = "<group>";
+		};
+		03DE35D3249741DA00B745E4 /* Disposeable */ = {
+			isa = PBXGroup;
+			children = (
+				03DE35D4249741F000B745E4 /* DisposableViewController.swift */,
+			);
+			path = Disposeable;
+			sourceTree = "<group>";
+		};
+		03DE35D6249745EC00B745E4 /* Schedulers */ = {
+			isa = PBXGroup;
+			children = (
+				03DE35D72497460600B745E4 /* SchedulersViewController.swift */,
+			);
+			path = Schedulers;
 			sourceTree = "<group>";
 		};
 		4D05BB80E6C79C7CDB0D0CD6 /* Frameworks */ = {
@@ -243,16 +296,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03DE35D82497460600B745E4 /* SchedulersViewController.swift in Sources */,
 				03DE35BE249710DA00B745E4 /* DriverViewController.swift in Sources */,
 				03DE35A6249710A500B745E4 /* ViewController.swift in Sources */,
 				03DE35C1249710DA00B745E4 /* MaybeViewController.swift in Sources */,
 				03DE35A2249710A500B745E4 /* AppDelegate.swift in Sources */,
 				03DE35BC249710DA00B745E4 /* SignalViewController.swift in Sources */,
+				03DE35D22497410B00B745E4 /* OperatorViewController.swift in Sources */,
+				03DE35C92497224000B745E4 /* AsyncSubjectViewController.swift in Sources */,
 				03DE35C4249716BE00B745E4 /* ObserverViewController.swift in Sources */,
+				03DE35CB2497258E00B745E4 /* PublishSubjectViewController.swift in Sources */,
 				03DE35C624971DBF00B745E4 /* BinderViewController.swift in Sources */,
 				03DE35BF249710DA00B745E4 /* CompletableViewController.swift in Sources */,
 				03DE35BD249710DA00B745E4 /* ObservableViewController.swift in Sources */,
+				03DE35CF24973F0B00B745E4 /* BehaviorSubjectViewController.swift in Sources */,
 				03DE35C0249710DA00B745E4 /* SingleViewController.swift in Sources */,
+				03DE35D5249741F000B745E4 /* DisposableViewController.swift in Sources */,
+				03DE35CD2497287400B745E4 /* ReplaySubjectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
