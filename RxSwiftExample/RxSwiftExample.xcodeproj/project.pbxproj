@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,8 @@
 		03DE35BF249710DA00B745E4 /* CompletableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE35B9249710DA00B745E4 /* CompletableViewController.swift */; };
 		03DE35C0249710DA00B745E4 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE35BA249710DA00B745E4 /* SingleViewController.swift */; };
 		03DE35C1249710DA00B745E4 /* MaybeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE35BB249710DA00B745E4 /* MaybeViewController.swift */; };
+		03DE35C4249716BE00B745E4 /* ObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE35C3249716BE00B745E4 /* ObserverViewController.swift */; };
+		03DE35C624971DBF00B745E4 /* BinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE35C524971DBF00B745E4 /* BinderViewController.swift */; };
 		6DEBE3FFB85283A3EC6D142D /* Pods_RxSwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7B7911EF49924E9B88CF77 /* Pods_RxSwiftExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		03DE35B9249710DA00B745E4 /* CompletableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletableViewController.swift; sourceTree = "<group>"; };
 		03DE35BA249710DA00B745E4 /* SingleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
 		03DE35BB249710DA00B745E4 /* MaybeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaybeViewController.swift; sourceTree = "<group>"; };
+		03DE35C3249716BE00B745E4 /* ObserverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverViewController.swift; sourceTree = "<group>"; };
+		03DE35C524971DBF00B745E4 /* BinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderViewController.swift; sourceTree = "<group>"; };
 		13851BB2B82F719859474E62 /* Pods-RxSwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExample.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample.release.xcconfig"; sourceTree = "<group>"; };
 		8A6C7C023FB093A7D1651E84 /* Pods-RxSwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExample.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
 		AA7B7911EF49924E9B88CF77 /* Pods_RxSwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +62,6 @@
 				8A6C7C023FB093A7D1651E84 /* Pods-RxSwiftExample.debug.xcconfig */,
 				13851BB2B82F719859474E62 /* Pods-RxSwiftExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +86,7 @@
 		03DE35A0249710A500B745E4 /* RxSwiftExample */ = {
 			isa = PBXGroup;
 			children = (
+				03DE35C2249712F300B745E4 /* Observer */,
 				03DE35B5249710BC00B745E4 /* Observable */,
 				03DE35A1249710A500B745E4 /* AppDelegate.swift */,
 				03DE35A5249710A500B745E4 /* ViewController.swift */,
@@ -105,6 +109,15 @@
 				03DE35BA249710DA00B745E4 /* SingleViewController.swift */,
 			);
 			path = Observable;
+			sourceTree = "<group>";
+		};
+		03DE35C2249712F300B745E4 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				03DE35C3249716BE00B745E4 /* ObserverViewController.swift */,
+				03DE35C524971DBF00B745E4 /* BinderViewController.swift */,
+			);
+			path = Observer;
 			sourceTree = "<group>";
 		};
 		4D05BB80E6C79C7CDB0D0CD6 /* Frameworks */ = {
@@ -235,6 +248,8 @@
 				03DE35C1249710DA00B745E4 /* MaybeViewController.swift in Sources */,
 				03DE35A2249710A500B745E4 /* AppDelegate.swift in Sources */,
 				03DE35BC249710DA00B745E4 /* SignalViewController.swift in Sources */,
+				03DE35C4249716BE00B745E4 /* ObserverViewController.swift in Sources */,
+				03DE35C624971DBF00B745E4 /* BinderViewController.swift in Sources */,
 				03DE35BF249710DA00B745E4 /* CompletableViewController.swift in Sources */,
 				03DE35BD249710DA00B745E4 /* ObservableViewController.swift in Sources */,
 				03DE35C0249710DA00B745E4 /* SingleViewController.swift in Sources */,
